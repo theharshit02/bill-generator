@@ -1,0 +1,31 @@
+.summary{
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 400px;
+    height: 350px;
+}
+
+.line{
+    width: 387px;
+    height: 0px;
+
+    border: 1px solid #A2A2A2;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    margin-top: 50px;
+}
+
+.info p{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.105em;
+
+    color: #04285A;
+}

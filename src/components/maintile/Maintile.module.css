@@ -1,7 +1,35 @@
 .main{
+    display: flex;
     width: 836px;
     height: 533px;  
     background: #FFFFFF;
     box-shadow: -2px 7px 33px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-left: 120px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn button{
+    width: 110px;
+    height: 44px;    
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn button:hover{
+    background: black;
+    color: white;
 }

@@ -4,8 +4,30 @@ import styles from './Sidebar.module.css'
 const Sidebar = () => {
   return (
     <div className={styles.side}>
-        <div className={styles.step}></div>
-      <div className={styles.num}>1</div>
+        <div className={styles.step}>
+            <div className={styles.num}>1</div>
+            <div className={styles.option}>
+                <p className={styles.count}>STEP 1</p>
+                <p className={styles.info}>YOUR INFO</p>
+            </div>
+        </div>
+
+        <div className={styles.step}>
+            <div className={styles.num}>2</div>
+            <div className={styles.option}>
+                <p className={styles.count}>STEP 2</p>
+                <p className={styles.info}>SELECT PLAN</p>
+            </div>
+        </div>
+
+        <div className={styles.step}>
+            <div className={styles.num}>3</div>
+            <div className={styles.option}>
+                <p className={styles.count}>STEP 3</p>
+                <p className={styles.info}>SUMMARY</p>
+            </div>
+        </div>
+      
     </div>
   )
 }
