@@ -1,17 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Yourinfo.module.css'
 
-const Yourinfo = () => {
+const Yourinfo = (props) => {
+
+  const [name, setname] = useState("")
+  const [email, setemail] = useState("")
+  const [phone, setphone ] = useState()
+
+  function handlename(e){
+    setname(e.target.value)
+  }
+  function handleemail(e){
+    setemail(e.target.value)
+  }
+  function handlephone(e){
+    setphone(e.target.value)
+  }
+
+  props.custname(name)
+  props.custemail(email)
+  props.custphone(phone)
+
   return (
     <div className={styles.info}>
       <h2>Your Information</h2>
       <div className={styles.field}>
+
         <p className={styles.title}>Name</p>
-        <input type="text" placeholder='Enter your name' name="" id=""/>
+        <input type="text" onChange={handlename} placeholder='Enter your name' name="" id=""/>
+
         <p className={styles.title}>Email</p>
-        <input type="email" placeholder='Enter your email' name="" id=""/>
+        <input type="email" onChange={handleemail} placeholder='Enter your email' name="" id=""/>
+
         <p className={styles.title}>Phone No.</p>
-        <input type="number" placeholder='Enter your mobile no.' name='' id=''/>
+        <input type="number" onChange={handlephone} placeholder='Enter your mobile no.' name='' id=''/>
+
       </div>
       
     </div>

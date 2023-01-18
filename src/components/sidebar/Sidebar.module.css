@@ -7,7 +7,6 @@
     left: 16px;
     top: 14px;
     
-    /* background: #483EFF; */
     border-radius: 7px;
     background-color: #e5e5f7;
     opacity: 0.7;
@@ -22,7 +21,6 @@
     align-items: center;
     margin-left: 30px;
     margin-top: 25px;
-    /* justify-content: space-around; */
 }
 .num{
     display: flex;
@@ -33,7 +31,6 @@
     left: 29px;
     top: 35px;
 
-    background: white;
     border: 1px solid black;
     border-radius: 100%;
     font-style: normal;
@@ -46,7 +43,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    /* width: 50px; */
 }
 
 .count{
@@ -55,8 +51,6 @@
     line-height: 13px;
     letter-spacing: -0.045em;
     color: rgb(36, 33, 33);
-    /* color: rgba(255, 255, 255, 0.46); */
-
 }
 .info {
     margin: 5px;
